@@ -232,17 +232,17 @@ https://templatemo.com/tm-565-onix-digital
     <tr>
       <th>Name</th>
       <td><label for="txt_name"></label>
-      <input type="text" name="txt_name" id="txt_name" title="" required="required" pattern="[a-zA-Z]*" /></td>
+      <input type="text" name="txt_name" id="txt_name" title="Name must be in characters" required="required" pattern="[a-zA-Z ]*"autocomplete="off" /></td>
     </tr>
     <tr>
       <th>Email</th>
       <td><label for="txt_email"></label>
-      <input type="email" name="txt_email" id="txt_email"required="required"  /></td>
+      <input type="email" name="txt_email" id="txt_email"required="required" autocomplete="off" /></td>
     </tr>
     <tr>
       <th>Contact</th>
       <td><label for="txt_contact"></label>
-      <input type="text" name="txt_contact" id="txt_contact"  title="Number Must have 10 Digits" required pattern="[0-9]{10}"/></td>
+      <input type="text" name="txt_contact" id="txt_contact"  title="Number Must have 10 Digits" required pattern="[0-9]{10}" autocomplete="off"/></td>
     </tr>
     <tr>
       <th>Address</th>

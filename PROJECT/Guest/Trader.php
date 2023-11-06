@@ -231,27 +231,27 @@ https://templatemo.com/tm-565-onix-digital
     <tr>
       <th>Name</th>
       <td><label for="txt_name"></label>
-      <input type="text" name="txt_name" id="txt_name" required pattern="{2,}" /></td>
+      <input type="text" name="txt_name" id="txt_name"title="Name must be in characters" required pattern="[a-zA-Z ]*" autocomplete="off" /></td>
     </tr>
     <tr>
       <th>Contact</th>
       <td><label for="txt_contact"></label>
-      <input type="text" name="txt_contact" id="txt_contact"required="required" title="Number Must have 10 Digits"  pattern="[0-9]{10,10}" /></td>
+      <input type="text" name="txt_contact" id="txt_contact"required="required" pattern="[0-9]{10}" title="Number Must have 10 Digits"  pattern="[0-9]{10,10}" autocomplete="off"/></td>
     </tr>
     <tr>
       <th>Email</th>
       <td><label for="txt_email"></label>
-      <input type="email" name="txt_email" id="txt_email" required /></td>
+      <input type="email" name="txt_email" id="txt_email" required autocomplete="off"/></td>
     </tr>
      <tr>
       <th>Password</th>
       <td><label for="txt_password"></label>
-      <input type="password" name="txt_password" id="txt_password" title="You must be enter 6 or more charaters" required pattern="[a-zA-Z0-9.@#$%^&*]{6,30}"/></td>
+      <input type="password" name="txt_password" id="txt_password" title="You must be enter 6 or more charaters" required pattern="[a-zA-Z0-9.@#$%^&*]{6,30}"autocomplete="off"/></td>
     </tr>
     <tr>
       <th>Address</th>
       <td><label for="txt_address"></label>
-      <input type="text" name="txt_address" id="txt_address" required/></td>
+      <input type="text" name="txt_address" id="txt_address" required autocomplete="off"/></td>
     </tr>
     <tr>
       <th>Photo</th>

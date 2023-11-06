@@ -1,5 +1,4 @@
 <?php
-ob_start();
 include("../Assets/Connection/Connection.php");
 session_start();
 if(isset($_GET['lid']))
@@ -17,7 +16,7 @@ if(isset($_POST['btn_submit']))
 				 ?>
 				  <script>
                   alert("Updated");
-                  window.location="ViewLotDetails.php";
+                  window.location="ViewLot.php";
                   </script>
                   <?php
 				
@@ -35,21 +34,21 @@ if(isset($_POST['btn_submit']))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Add Details</title>
+<link rel="stylesheet" href="../Assets/Template/form.css">
+
 </head>
 
 <body>
-<?php
-include("Head.php");
-?>
+
 <div id="tab">
   <br />
   <br />
   <br />
   <br />  
 
-<h1><ul>Add Details</ul></h1>
+<h1 align="center"><ul>Add Details</ul></h1>
 <form id="form1" name="form1" method="post" action="">
-  <table width="200" border="1">
+  <table width="200" border="1" align="center">
     <tr>
       <th>Starting Price</th>
       <td><label for="txt_startingprice"></label>
@@ -67,11 +66,7 @@ include("Head.php");
     </tr>
   </table>
 </form>
-<?php
-include("Foot.php");
-?>
+
 </body>
- <?php
- ob_flush();
- ?>
+
 </html>
